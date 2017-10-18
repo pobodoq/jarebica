@@ -1,0 +1,173 @@
+body{
+    background-color: #c8c6c7;
+}
+#nav{
+    min-height: 70px;
+    box-shadow: 0px 2px 15px 4px black;
+    z-index: 10;
+}
+#nav, #nav div{
+    background-color: #134077 !important;
+}
+#nav .navbar-toggle{
+    margin-top: 25px;
+}
+#nav .navbar{
+    border: none;
+}
+#nav .navbar-brand{
+    padding: 20px 0 0 0;
+}
+#nav:after{
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: transparent;
+    box-shadow: 0px 20px 50px 30px black;
+    opacity: .5;
+    content: '';
+    box-sizing: border-box;
+}
+/*END NAVIGATION*/
+
+/*START APP DESCRIPTION*/
+
+#app-description{
+    width: 100%;
+    background-color: #1e4974;
+    box-shadow: inset 0px -2px 0px 0px black;
+    z-index: 1;
+}
+#app-description:after{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    /* height: 1px; */
+    /* left: 50%; */
+    width: 5%;
+    /* height: 5px; */
+    background-color: red;
+    box-shadow: 0px 83px 170px 85px white;
+    opacity: .5;
+    content: '';
+    box-sizing: border-box;
+    z-index: -1;
+}
+#app-description div{
+    padding: 0;
+}
+#app-text{
+    color: white;
+    /*max-width: 320px;*/
+}
+#app-img{
+    position: relative;
+
+    /*max-width: 320px;*/
+}
+#app-img img{
+    position: relative;
+    width: 100%;
+}
+#app-or-web{
+    position: relative;
+    /*width: 100%;*/
+    background-color: #e8ecef;
+    z-index: 2;
+}
+#app-or-web:after{
+    position: absolute;
+    top: 0px;
+    /*left: 50%;*/
+    width: 100%;
+    /*height: 5px;*/
+    /*background-color: red;*/
+    box-shadow: 0px 20px 50px 30px #134077;
+    opacity: .5;
+    content: '';
+    box-sizing: border-box;
+    z-index: -1;
+}
+#app-or-web button{
+    /*width: 100%;*/
+    margin: 7px 0px 7px 0px;
+    padding: 10px;
+}
+
+
+/* END APP DESCRIPTION*/
+/*Community description*/
+
+#community-description{
+    /*background-color: #c8c6c7;*/
+    /*font-size: 0;*/
+}
+
+#community-description .article h3{
+    color: #878586;
+}
+#community-description .article p{
+    /*font-weight: 700;*/
+    /*font-size: 12px;*/
+}
+#community-description .article span{
+    color: #3f99b3;
+}
+#payment{
+    position: relative;
+    font-size: 18px;
+}
+#payment > div{
+    background-color: white;
+    border: 1px solid #1e4974;
+    border-radius: 15px;
+    text-align: center;
+}
+#payment h3{
+    border-bottom: 1px solid #1e4974;
+}
+#payment span{
+    font-size: 64px;
+    color: #7690aa;
+}
+
+/*END community description*/
+
+
+
+/* min-width 768px */
+
+@media screen and (min-width: 768px) {
+    #nav .navbar-nav{
+        float: right;
+    }
+    #app-description #app-text{
+        padding: 50px;
+    }
+    #app-img{
+        margin-top: 20px;
+        padding: 5px;
+        transform: translateY(35px);
+        z-index: 3;
+    }
+    #app-or-web{
+        z-index: -1;
+    }
+    #app-or-web:after{
+        left: 0;
+    }
+    #payment{
+        left: 26%;
+        margin-top: 30px;
+    }
+}
+@media screen and (min-width: 768px) {
+    #payment{
+        left: 0;
+    }
+    #community-description .article{
+        height: 200px;
+    }
+}

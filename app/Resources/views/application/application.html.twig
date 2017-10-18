@@ -1,0 +1,81 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="nav" class="col-xs-12">
+        <div class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="{{ asset('images/logo.png') }}"/></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Lovna sezona</a></li>
+                        <li><a href="#">Pravilnik</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="app-description" class="col-xs-12">
+        <div id="app-text" class="col-xs-12 col-sm-6">
+            <h3>Aplikacija za prikaz financija društva</h3>
+            <p>
+                Ova aplikacija je namjenjena članovima Lovačkog društva Jarebica Mostar. Kroz ovu aplikaciju svi članovi društva imaju uvid u financijsko materijalno poslovanje.
+            </p>
+        </div>
+        <div id="app-img" class="col-xs-12 col-sm-6">
+            <img src="{{ asset('images/programslika_final.png') }}"/>
+        </div>
+    </div>
+    <div id="app-or-web" class="col-xs-12">
+        <a href="#" class="col-xs-12 col-sm-3"><button href="#" type="button" class="btn btn-primary col-xs-12">NAŠ WEB</button></a>
+        <a href="program/izvjestaj" class="col-xs-12 col-sm-3"><button type="button" class="btn btn-success col-xs-12">POKRENI PROGRAM</button></a>
+    </div>
+    <div id="community-description" class="col-xs-12 col-md-9">
+        <div class="article col-xs-12 col-sm-6">
+            <h3><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Tko smo i čime se bavimo?</h3>
+            <p><strong>Mi smo društvo koje živi od financiranja naših članova. Glavna zadaća nam je skribit za floru i faunu. Čuvamo i brinemo za prirodu. Štitimo poljiprivrenda dobra i ljude na njima. </strong></p>
+            <a href="#">Saznajte više...</a>
+        </div>
+        <div class="article col-xs-12 col-sm-6">
+            <h3><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> Svrha aplikacije</h3>
+            <p><strong>Mi smo društvo koje živi od financiranja naših članova. Glavna zadaća nam je skribit za floru i faunu. Čuvamo i brinemo za prirodu. Štitimo poljiprivrenda dobra i ljude na njima. </strong></p>
+            <a href="#">Saznajte više...</a>
+        </div>
+        <div class="article col-xs-12 col-sm-6">
+            <h3><span class="glyphicon glyphicon-euro" aria-hidden="true"></span> Prihodi</h3>
+            <p><strong>Mi smo društvo koje živi od financiranja naših članova. Glavna zadaća nam je skribit za floru i faunu. Čuvamo i brinemo za prirodu. Štitimo poljiprivrenda dobra i ljude na njima. </strong></p>
+            <a href="#">Saznajte više...</a>
+        </div>
+        <div class="article col-xs-12 col-sm-6">
+            <h3><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Rashodi</h3>
+            <p><strong>Mi smo društvo koje živi od financiranja naših članova. Glavna zadaća nam je skribit za floru i faunu. Čuvamo i brinemo za prirodu. Štitimo poljiprivrenda dobra i ljude na njima. </strong></p>
+            <a href="#">Saznajte više...</a>
+        </div>
+    </div>
+    <div id="payment" class="col-xs-12 col-sm-6 col-md-3">
+        <div class="col-xs-12">
+            <h3>Način uplate članarine</h3>
+            <span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>
+            <p>Ovdje imate objašnjen način na koji ćete uplatiti godišnju članarinu društvu!</p>
+            <p>Hvala Vam u ime Lovačkog društva "Jarebica Mostar"!</p>
+            <a href="#">Saznajte više...</a>
+        </div>
+    </div>
+    <div id="footer" class="col-xs-12">
+        <p>Copyrights &copy; DK design </p>
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+{% endblock %}
